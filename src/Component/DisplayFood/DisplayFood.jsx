@@ -14,7 +14,7 @@ const DisplayFood = ({food}) => {
                     <h3 className='text-lg font-bold'>Category: {strCategory}</h3>
                     {/* <a className='text-blue-700 underline' href={strSource} target='blank' > See more</a> */}
                     <div className="card-actions justify-end">
-                        <a href={strYoutube} target='blank'> <button className="btn px-12 bg-red-600 hover:bg-red-500 border-none">Youtube</button></a>
+                        <a href={strYoutube} target='_blank'> <button className="btn px-12 bg-red-600 hover:bg-red-500 border-none">Youtube</button></a>
                     </div>
                 </div>
             </div>
