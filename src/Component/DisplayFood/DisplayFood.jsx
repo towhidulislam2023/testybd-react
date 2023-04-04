@@ -12,7 +12,7 @@ const DisplayFood = ({food}) => {
                     <p>{strInstructions.slice(0,200)}...</p>
                     <h3 className='text-md font-bold'>Area: {strArea}</h3>
                     <h3 className='text-lg font-bold'>Category: {strCategory}</h3>
-                    <a className='text-blue-700 underline' href={strSource} target='blank' > See more</a>
+                    {/* <a className='text-blue-700 underline' href={strSource} target='blank' > See more</a> */}
                     <div className="card-actions justify-end">
                         <a href={strYoutube} target='blank'> <button className="btn px-12 bg-red-600 hover:bg-red-500 border-none">Youtube</button></a>
                     </div>
