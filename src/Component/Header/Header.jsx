@@ -19,7 +19,7 @@ const Header = () => {
 
             <ul className={`md:flex gap-8 md:static duration-500   absolute ${navOpen ? "top-16 right-0" : "-top-96 right-0"}`}>
                 {
-                    navigations.map(navigation => <NavLink key={navigation.id} className={({ isActive }) => isActive ? "text-yellow-400 underline" : ""} to={navigation.link}><li className='text-sm md:text-xl font-bold bg-indigo-500 px-7 py-1  text-white' key={navigation.id}>{navigation.label}</li></NavLink>)
+                    navigations.map(navigation => <NavLink key={navigation.id} className={({ isActive }) => isActive ? "text-yellow-400 underline" : ""} to={navigation.link}><li className='text-sm md:text-xl font-bold bg-indigo-500 px-7 py-1 z-20  text-white' key={navigation.id}>{navigation.label}</li></NavLink>)
                 }
             </ul>
             <div className='md:hidden cursor-pointer' onClick={() => setNavOpen(!navOpen)}>

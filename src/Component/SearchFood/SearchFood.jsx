@@ -13,7 +13,8 @@ const SearchFood = () => {
         <div>
             {/* <h1>this is search food {foods.meals.length}</h1>  */}
             <button onClick={handelNavigate} className='mx-16 text-sm text-blue-600'>Go Back</button>
-            <div className='grid md:grid-cols-3 gap-14 w-[85%] mx-auto'>
+            <h1 className='text-3xl text-center'>Your Searched food</h1>
+            <div className='grid md:grid-cols-3 gap-14 w-[85%] mx-auto -z-20 my-14'>
                 {
                     foods.meals.map(food => <DisplayFood key={food.idMeal} food={food}></DisplayFood>)
                 }
